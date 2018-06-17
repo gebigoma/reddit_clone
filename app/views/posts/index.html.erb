@@ -1,0 +1,8 @@
+<h1>Posts</h1>
+
+<div id="posts-list">
+  <% for p in @posts %>
+    <div class = "post"><%= link_to(p.title, "/posts/#{p.id}") %></div>
+  <% end %>
+
+</div>
